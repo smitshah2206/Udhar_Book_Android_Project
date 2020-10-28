@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:id="@+id/homedashboardparagraph1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="13dp"
+            android:text="@string/homedashboardparagraph1"
+            android:textColor="@color/black"
+            android:textSize="20sp"></TextView>
+
+
+        <LinearLayout
+            android:id="@+id/netbalance_transaction_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/netbalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/transactionamountcredit"
+                android:textColor="@color/warning"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/net_amount_symbol"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/debit_rs_symbol"></ImageView>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:id="@+id/cardlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/debit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                app:strokeColor="@color/colorAccent"
+                app:strokeWidth="2dp"
+                app:cardBackgroundColor="@color/transparent"
+                android:background="@drawable/card_round_corner">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:id="@+id/debit_transaction_layout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/debitbalance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/transactionamountcredit"
+                            android:textColor="@color/warning"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/debit_amount_symbol"
+                            android:layout_width="20dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/debit_rs_symbol"></ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right"
+                        android:text="@string/debitbalancetext"
+                        android:textColor="@color/black"
+                        android:textSize="18sp">
+
+                    </TextView>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/credit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/card_round_corner"
+                app:strokeColor="@color/colorAccent"
+                app:cardBackgroundColor="@color/transparent"
+                app:strokeWidth="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center">
+
+                        <TextView
+                            android:id="@+id/creditbalance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:text="@string/transactionamountcredit"
+                            android:textColor="@color/sucess"
+                            android:textSize="20sp">
+
+                        </TextView>
+
+                        <ImageView
+                            android:id="@+id/credit_amount_symbol"
+                            android:layout_width="20dp"
+                            android:layout_height="15dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginEnd="5dp"
+                            android:src="@drawable/credit_rs_symbol"></ImageView>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="right"
+                        android:text="@string/creditbalancetext"
+                        android:textColor="@color/black"
+                        android:textSize="18sp">
+
+                    </TextView>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardlayout"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="@string/homedashboardparagraph2"
+            android:textColor="@color/grey"
+            android:textSize="10sp">
+
+
+        </TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/alltransaction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="@string/homedashboardparagraph3"
+                    android:textColor="@color/black"
+                    android:textSize="20sp">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/see_all"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/alltransaction"
+                    android:layout_alignParentRight="true"
+                    android:gravity="bottom"
+                    android:text="@string/homedashboardparagraph4"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="12sp">
+
+                </TextView>
+
+            </RelativeLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/transactionrecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

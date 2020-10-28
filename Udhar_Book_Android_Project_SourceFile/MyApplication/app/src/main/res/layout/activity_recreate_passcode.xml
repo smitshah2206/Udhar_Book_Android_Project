@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".recreate_passcode">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/otpicon"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/passcodeheading"
+            android:textColor="@color/colorAccent"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/passcodeparagraph1"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="left"
+            android:text="Set Passcode"
+            android:textColor="@color/colorAccent"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/number1"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLength="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"/>
+
+
+            <EditText
+                android:id="@+id/number2"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/number3"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/number4"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <ImageView
+                android:id="@+id/set_passcode"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_eye_solid" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="184dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:text="Re-Enter Passcode"
+            android:textColor="@color/colorAccent"></TextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/number5"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/number6"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/number7"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <EditText
+                android:id="@+id/number8"
+                android:layout_width="38dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center_horizontal"
+                android:inputType="numberPassword"
+                android:maxLength="1" />
+
+            <ImageView
+                android:id="@+id/re_passcode"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="7dp"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/ic_eye_solid" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/validationerror" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/redirectback"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/rightarrow" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

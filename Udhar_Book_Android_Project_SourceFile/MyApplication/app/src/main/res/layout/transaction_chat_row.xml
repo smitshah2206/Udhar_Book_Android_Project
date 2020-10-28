@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/transction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:strokeColor="@color/colorAccent"
+        app:cardCornerRadius="10sp"
+        app:strokeWidth="2dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/transaction_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp">
+
+                <LinearLayout
+                    android:id="@+id/transaction_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true">
+
+                    <TextView
+                        android:id="@+id/transaction_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/transactionamountcredit"
+                        android:textColor="@color/warning"
+                        android:textSize="20sp">
+
+                    </TextView>
+
+                    <ImageView
+                        android:id="@+id/transactionamountsymbol"
+                        android:layout_width="20dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/debit_rs_symbol"></ImageView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/transaction_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/transaction_layout"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:textSize="12sp"
+                    android:text="@string/transactiondate">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/transaction_remarks"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/transaction_time"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:maxWidth="120dp"
+                    android:text="@string/transaction_details">
+
+                </TextView>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/share_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:onClick="share_transaction"
+                >
+                <ImageView
+                    android:id="@+id/share_icon"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/debit_share_icon">
+
+                </ImageView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Share With Your Customer">
+                </TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

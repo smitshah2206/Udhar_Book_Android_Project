@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_qrcode"
+        android:icon="@drawable/qrcode_icon"
+        android:title="@string/nav_qrcode"></item>
+    <item
+        android:id="@+id/nav_help"
+        android:icon="@drawable/info_icon"
+        android:title="@string/nav_help"></item>
+    <item
+        android:id="@+id/nav_share"
+        android:icon="@drawable/share_icon"
+        android:title="@string/nav_share"></item>
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/logout_icon"
+        android:title="@string/nav_logout"></item>
+</menu>

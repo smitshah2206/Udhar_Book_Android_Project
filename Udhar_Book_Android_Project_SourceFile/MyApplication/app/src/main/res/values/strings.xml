@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">Udhar Book</string>
+
+    <string name="map_key" translatable="false">AIzaSyBDiYQMQ2K7-tkBwtNq9bRFBHPN_zRynbU</string>
+
+    /* Side Navigation Bar */
+    <string name="nav_qrcode">QR Code</string>
+    <string name="nav_help">Help &amp; Support</string>
+    <string name="nav_share">Share This App</string>
+    <string name="nav_logout">Log Out</string>
+
+
+    /* Bottom Navigation Bar */
+    <string name="nav_home">Home</string>
+    <string name="nav_customer">Customer</string>
+    <string name="nav_transaction">Transaction</string>
+
+    /* Common Values */
+    <string name="redirecticon">Redirect Circle Icon</string>
+    <string name="rightarrow">Right Arrow Icon</string>
+
+    /* Registration Page Values */
+    <string name="registericon">Registration Icon</string>
+    <string name="registrationheading">Register</string>
+    <string name="registrationparagraph1">Enter your mobile number</string>
+    <string name="registrationvalidation">Phone Number is not valid</string>
+    <string name="registrationparagraph2">We\'ll send OTP on this number</string>
+    <string name="registrationparagraph3">Have an account ?</string>
+    <string name="registrationredirecttologin">Login</string>
+
+    /* Login Page Values */
+    <string name="loginicon">Login Icon</string>
+    <string name="loginheading">Login</string>
+    <string name="loginparagraph1">Enter your mobile number</string>
+    <string name="loginvalidation">Phone Number is not valid</string>
+    <string name="loginparagraph2">We\'ll send OTP on this number</string>
+    <string name="loginparagraph3">Don\'t have an account ?</string>
+    <string name="loginredirecttoregistration">Register</string>
+
+
+    /* OTP Page Values */
+    <string name="otpicon">OTP Icon</string>
+    <string name="otpheading">OTP</string>
+    <string name="otpparagraph1">Enter 4 digit number sent to</string>
+    <string name="otpparagraph2">mobile number</string>
+    <string name="otpparagraph3">8849364239</string>
+    <string name="otpvalidation">Incorrect OTP Provided</string>
+    <string name="otpparagraph4">Resend OTP (13)</string>
+
+
+    /*Passcode Page*/
+    <string name="passcodeheading">Passcode</string>
+    <string name="passcodeparagraph1">Enter 4 digit Passcode</string>
+    <string name="passcodeparagraph2">mobile number</string>
+    <string name="passcodeparagraph3">8849364239</string>
+    <string name="passcodeparagraph4">Don\'t remember a passcode ?</string>
+    <string name="passcodeparagraph5">Re-create</string>
+    <string name="passcodevalidation">Incorrect Passcode Provided</string>
+
+
+    /* FormDashboard Page Values */
+    <string name="formdashboardicon">OTP Icon</string>
+    <string name="formdashboardheading">+91 - 8849364239</string>
+    <string name="formdashboardplaceholder1">Name</string>
+    <string name="formdashboardvalidation1">Only whitespace and character</string>
+    <string name="formdashboardplaceholder2">Business Name</string>
+    <string name="formdashboardvalidation2"></string>
+    <string name="formdashboardplaceholder3">Location</string>
+    <string name="formdashboardvalidation3">Only whitespace and character</string>
+    <string name="editbutton">Save</string>
+    <string name="editformdashboardheading">Update Details</string>
+
+
+    /* Home Dashboad */
+
+    <string name="homedashboardstatusbar">Account Summary</string>
+    <string name="homedashboardparagraph1">Net Balance</string>
+    <string name="netbalance">-17000</string>
+    <string name="debitbalance">-34000</string>
+    <string name="debitbalancetext">Debit</string>
+    <string name="creditbalance">+17000</string>
+    <string name="creditbalancetext">Credit</string>
+    <string name="homedashboardparagraph2">Till Last Transaction</string>
+    <string name="homedashboardparagraph3">All Transactions</string>
+    <string name="homedashboardparagraph4">SEE ALL</string>
+
+    /* Select Customer Dashboard */
+
+    <string name="selectcustomerdashboardstatusbar">Select Customer</string>
+    <string name="selectcustomerdashboardheading">Add New Contact</string>
+    <string name="selectcustomerdashboardparagraph1">All Contacts</string>
+
+    /* Transaction List Dashboard */
+
+    <string name="transactionlistdashboardstatusbar">Transaction List</string>
+    <string-array name="numbers">
+        <item>All Transactions </item>
+        <item>Credit Transactions</item>
+        <item>Debit Transactions</item>
+    </string-array>
+
+    /* transaction_chat */
+
+    <string name="debitbutton">You Gave</string>
+    <string name="creditbutton">You Got</string>
+
+
+    /* Qr Code */
+    <string name="qrdashboardstatusbar">QR Code</string>
+
+    /* Temp String */
+    <string name="customername">Smit Shah</string>
+    <string name="customerphonenumber">+91 8849364239</string>
+    <string name="transactionamountcredit">+17000</string>
+    <string name="transactionamountdebit">-17000</string>
+    <string name="transactiondate">24 July 2020 10:00 AM</string>
+    <string name="transaction_details">Pay For Bill</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

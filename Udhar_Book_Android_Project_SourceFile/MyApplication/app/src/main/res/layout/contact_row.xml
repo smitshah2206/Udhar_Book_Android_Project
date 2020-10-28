@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/transction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="transaction_chat"
+        android:layout_margin="10dp"
+        app:cardBackgroundColor="@color/transparent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="2dp"
+        android:tag="0">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/customer_image"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="7dp"
+                android:src="@drawable/s"/>
+
+            <TextView
+                android:id="@+id/customername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@id/customer_image"
+                android:maxWidth="140dp"
+                android:text="@string/customername"
+                android:textColor="@color/black"
+                android:textSize="14sp"></TextView>
+
+            <TextView
+                android:id="@+id/customerphonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/customername"
+                android:layout_toRightOf="@+id/customer_image"
+                android:gravity="end"
+                android:layout_marginTop="3dp"
+                android:text="@string/customerphonenumber"
+                android:textColor="@color/black"
+                android:textSize="10sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                >
+                <TextView
+                    android:id="@+id/transactionamount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transactionamountcredit"
+                    android:textColor="@color/sucess"
+                    android:textSize="20sp">
+
+
+                </TextView>
+                <ImageView
+                    android:id="@+id/transactionamountsymbol"
+                    android:layout_width="20dp"
+                    android:layout_height="15dp"
+                    android:layout_toLeftOf="@id/transactionamount"
+                    android:src="@drawable/credit_rs_symbol"
+                    android:layout_marginTop="7dp"
+                    >
+                </ImageView>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

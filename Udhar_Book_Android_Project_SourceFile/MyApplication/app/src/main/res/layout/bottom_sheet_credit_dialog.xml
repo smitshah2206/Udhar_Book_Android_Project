@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_centerHorizontal="true">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/credit_rs_symbol_heading"
+        android:layout_centerHorizontal="true"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/transaction_amount_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Transaction Amount"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        app:boxStrokeColor="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/transaction_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:drawableStart="@drawable/credit_rs_symbol_transaction"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/error_msg_transaction_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/warning">
+    </TextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/transaction_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Reason For Payment"
+        android:layout_marginEnd="35dp"
+        android:layout_marginStart="35dp"
+        android:layout_centerHorizontal="true"
+        app:boxStrokeColor="@color/colorAccent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/transaction_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:drawableStart="@drawable/credit_remarks_icon"
+            android:drawablePadding="10dp"
+            android:textColor="@color/black"
+            android:maxLength="20">
+
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/error_msg_transaction_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/warning">
+    </TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/transaction_date_layout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:layout_gravity="start"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        app:boxStrokeColor="@color/colorAccent"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="1dp">
+
+        <TextView
+            android:id="@+id/transaction_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:drawableStart="@drawable/credit_calender_icon"
+            android:drawablePadding="10dp"
+            android:gravity="center"
+            android:hint="DD - MM - YYYY"
+            android:textColor="@color/black"
+            android:textSize="15sp">
+
+        </TextView>
+
+    </com.google.android.material.card.MaterialCardView>
+    <TextView
+        android:id="@+id/error_msg_transaction_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start"
+        android:layout_marginStart="35dp"
+        android:textColor="@color/warning">
+    </TextView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:background="@color/transparent"
+        app:strokeColor="@color/colorAccent"
+        app:strokeWidth="2dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/contact_number_layout"
+        >
+
+        <TextView
+            android:id="@+id/save_credit"
+            android:layout_width="100dp"
+            android:layout_height="25dp"
+            android:textAlignment="center"
+            android:text="Save"
+            android:textSize="18sp"
+            android:textColor="@color/sucess">
+
+        </TextView>
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+
+
+</LinearLayout>

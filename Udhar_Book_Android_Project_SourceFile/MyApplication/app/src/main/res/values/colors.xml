@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3700B3</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#1774F0</color>
+    <color name="validationerror">#EA2027</color>
+    <color name="dashboardstatusbar">#FCFCFC</color>
+    <color name="black">#000000</color>
+    <color name="warning">#FC5C65</color>
+    <color name="sucess">#26DE81</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey">#BDC3C7</color>
+    <color name="text_color">#4B3D3D</color>
+    <color name="onboarding_color">#34495E</color>
+    <color name="background">#FCFCFC</color>
+    <color name="colorShimmer">#E4E2E2</color>
+    <color name="colorBackground">#fff</color>
+    <color name="follow">#2c3e50</color>
+    <color name="contactus">#808e9b</color>
+
+</resources>
